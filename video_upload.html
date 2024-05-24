@@ -1,0 +1,31 @@
+<html>
+<body>
+    <form method="post" action="{{url_for('upload_video')}}" id="form" name="form" enctype="multipart/form-data">
+        <input id="video" type="file" name="video" accept="video/*" multiple>
+        <input type="submit" id="display" name="display" value="Display">
+    </form>
+
+    <script>
+
+        $("#video").change(function(){
+    
+            var input = document.getElementById('video');
+            for (var i=0; i<input.files.length; i++)
+            {
+
+            var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+            var ext= input.name.substring(input.name.lastIndexOf('.')+1).toLowerCase()
+    
+                if (ext == 'mp4')
+                {
+                    $("#msg").text("Files are supported")
+                }
+                else
+                {
+                    $("#msg").text("Files are NOT supported")
+                    document.getElementById("video").value ="";
+                }
+    
+            } });
+    
+    </script>
