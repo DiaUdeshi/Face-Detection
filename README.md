@@ -4,11 +4,11 @@ This repository contains code for face detection using static images, webcam, an
 
 ## Contents:
 
-1. [Static Image Face Detection]
-2. [Webcam Face Detection]
-3. [Recorded Video Face Detection]
-4. [Web Application for Face Detection]
-5. [Installation]
+1. Static Image Face Detection
+2. Webcam Face Detection
+3. Recorded Video Face Detection
+4. Web Application for Face Detection
+5. Installation
 
 
 ## Static Image Face Detection:
